@@ -9,7 +9,7 @@ install:
 
 # Build script
 script:
-  - npm run build
+  - npm run production-build
 
 # Deploy options
 deploy:
