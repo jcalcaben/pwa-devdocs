@@ -13,7 +13,7 @@
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
-    "production-build": "jekyll build --source src/ --config src/_config.yml,_config-production.yml",
+    "production-build": "gulp sass:prod && gulp webpack:prod && jekyll build --source src/ --config src/_config.yml,_config-production.yml",
     "package": "jekyll build --source src/ --config src/_config.yml,_config-production.yml && tar -cvvf site.tar _site",
     "tests": "npm run test-links",
     "test-links": "rm -fr _site && npm run build && node_modules/broken-link-checker-local/out/bin.js _site -rog"
