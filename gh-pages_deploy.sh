@@ -1,5 +1,5 @@
 #!/bin/sh
-git clone --depth=1 /Users/jcalcaben/git/private/devdocs_internal -b gh-pages --single-branch _gh-pages
+git clone --depth=1 https://github.com/jcalcaben/devdocs.git -b gh-pages --single-branch _gh-pages
 
 rm -fr _gh-pages/pwa-devdocs
 
