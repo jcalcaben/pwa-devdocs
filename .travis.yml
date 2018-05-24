@@ -9,8 +9,8 @@ install:
 
 # Build script
 script:
-  - npm run fetch-site
   - npm run production-build
+  - bash ./gh-pages_deploy.sh
 
 # Deploy options
 deploy:
@@ -18,7 +18,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  local-dir: _site
+  local-dir: _gh-pages
   repo: jcalcaben/devdocs
   target-branch: jcal/html-multi-test
   on:

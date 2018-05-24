@@ -1,4 +1,2 @@
 baseurl: /pwa-devdocs
 environment: public
-
-destination: _site/pwa-devdocs
