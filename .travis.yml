@@ -21,4 +21,4 @@ deploy:
   repo: jcalcaben/devdocs
   target-branch: html-multi-test
   on:
-    branch: travis-ci-integration
+    branch: jcalcaben/multi-branch-building
