@@ -19,4 +19,4 @@ deploy:
   keep-history: true
   local-dir: _site
   on:
-    branch: travis-ci-integration
+    branch: preview_product-page-breakdown
