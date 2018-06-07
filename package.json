@@ -4,18 +4,17 @@
   "description": "A documentation site for Magento PWA",
   "main": "gulpfile.js",
   "dependencies": {
-    "broken-link-checker-local": "^0.1.1",
     "gulp": "^3.9.1",
     "jekyll-tasks": "^1.2.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "markdown-link-check": "^3.6.1"
   },
   "devDependencies": {},
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
     "package": "jekyll build --source src/ --config src/_config.yml,_config-production.yml && tar -cvvf site.tar _site",
-    "tests": "npm run test-links",
-    "test-links": "rm -fr _site && npm run build && node_modules/broken-link-checker-local/out/bin.js _site -rog"
+    "tests": "gulp tests"
   },
   "repository": {
     "type": "git",
